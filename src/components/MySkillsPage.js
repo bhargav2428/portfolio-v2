@@ -1,16 +1,16 @@
-import React from 'react';
-import styled, { ThemeProvider } from 'styled-components';
-import { lightTheme } from './Themes';
-import { Design, Develope } from './AllSvgs';
+import React from "react";
+import styled, { ThemeProvider } from "styled-components";
+import { lightTheme } from "./Themes";
+import { Design, Develope } from "./AllSvgs";
 
-import LogoComponent from '../subComponents/LogoComponent';
-import SocialIcons from '../subComponents/SocialIcons';
-import PowerButton from '../subComponents/PowerButton';
-import ParticleComponent from '../subComponents/ParticleComponent';
-import BigTitle from '../subComponents/BigTitlte'; // Corrected import spelling
+import LogoComponent from "../subComponents/LogoComponent";
+import SocialIcons from "../subComponents/SocialIcons";
+import PowerButton from "../subComponents/PowerButton";
+import ParticleComponent from "../subComponents/ParticleComponent";
+import BigTitle from "../subComponents/BigTitlte"; // Corrected import spelling
 
 const Box = styled.div`
-  background-color: ${props => props.theme.body};
+  background-color: ${(props) => props.theme.body};
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -20,22 +20,22 @@ const Box = styled.div`
 `;
 
 const Main = styled.div`
-  border: 2px solid ${props => props.theme.text};
-  color: ${props => props.theme.text};
-  background-color: ${props => props.theme.body};
+  border: 2px solid ${(props) => props.theme.text};
+  color: ${(props) => props.theme.text};
+  background-color: ${(props) => props.theme.body};
   padding: 2rem;
   width: 30vw;
   height: 60vh;
   z-index: 3;
   line-height: 1.5;
   cursor: pointer;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: "Ubuntu Mono", monospace;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   &:hover {
-    color: ${props => props.theme.body};
-    background-color: ${props => props.theme.text};
+    color: ${(props) => props.theme.body};
+    background-color: ${(props) => props.theme.text};
   }
 `;
 
@@ -46,7 +46,7 @@ const Title = styled.h2`
   font-size: calc(1em + 1vw);
   ${Main}:hover & {
     & > * {
-      fill: ${props => props.theme.body};
+      fill: ${(props) => props.theme.body};
     }
   }
   & > *:first-child {
@@ -55,11 +55,11 @@ const Title = styled.h2`
 `;
 
 const Description = styled.div`
-  color: ${props => props.theme.text};
+  color: ${(props) => props.theme.text};
   font-size: calc(0.6em + 1vw);
   padding: 0.5rem 0;
   ${Main}:hover & {
-    color: ${props => props.theme.body};
+    color: ${(props) => props.theme.body};
   }
   strong {
     margin-bottom: 1rem;
@@ -89,7 +89,10 @@ const MySkillsPage = () => {
           </Description>
           <Description>
             <strong>Intermediate</strong>
-            <p>Java | Bash | Javascript | HTML | CSS | Django | MySQL | Firebase | Flask | Ethical Hacking | Linux Tools</p>
+            <p>
+              Node | Javascript | HTML | CSS | Django | MySQL | Firebase | Flask
+              | Ethical Hacking | PHP
+            </p>
           </Description>
         </Main>
         <Main>
@@ -98,7 +101,10 @@ const MySkillsPage = () => {
           </Title>
           <Description>
             <strong>Software and Tools</strong>
-            <p>VSCode | PyCharm | OWASP | GitHub | AWS Cloud | Red Hat | Burp Suite | Kali Linux | Ubuntu</p>
+            <p>
+              VSCode | PyCharm | OWASP | GitHub | AWS Cloud | Red Hat | Burp
+              Suite | Kali Linux | Ubuntu | Git | Docker
+            </p>
           </Description>
           <Description>
             <strong>Familiar</strong>
