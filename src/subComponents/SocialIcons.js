@@ -57,7 +57,7 @@ const SocialIcons = (props) => {
         <a
           style={{ color: "inherit" }}
           target="_blank"
-          href={"https://facebook.com/codebucks27"}
+          href={"https://www.linkedin.com/in/bhargav-yaswanth-128372231/"}
         >
           <LinkedIn
             width={25}
@@ -74,7 +74,7 @@ const SocialIcons = (props) => {
         <a
           style={{ color: "inherit" }}
           target="_blank"
-          href={"https://youtube.com"}
+          href={"mailto:bhargavyaswanth@gmail.com"}
         >
           <Email
             width={25}
